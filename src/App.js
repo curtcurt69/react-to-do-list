@@ -34,6 +34,7 @@ function App(props) {
     });
     setTasks(editedTaskList);
   }
+
   function addTask(name) {
     const newTask = { id: `todo-${nanoid()}`, name, completed: false };
     setTasks([...tasks, newTask]);
@@ -104,6 +105,5 @@ function App(props) {
     </div>
   );
 }
-
 
 export default App;
